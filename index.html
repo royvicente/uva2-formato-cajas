@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife Gym - Registro de Usuarios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>FitLife Gym</h1>
+  </header>
+
+  <main>
+    <section class="formulario-registro">
+      <h2>Registro de Usuario</h2>
+      <form id="registro-form">
+        <div class="form-group">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label for="plan">Plan de entrenamiento:</label>
+          <select id="plan" name="plan" required>
+            <option value="">Selecciona un plan</option>
+            <option value="basico">Plan Básico</option>
+            <option value="intermedio">Plan Intermedio</option>
+            <option value="avanzado">Plan Avanzado</option>
+            <option value="premium">Plan Premium</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Horario preferido:</label>
+          <div class="horarios">
+            <label>
+              <input type="radio" name="horario" value="manana" required>
+              Mañana (6:00 - 12:00)
+            </label>
+            <label>
+              <input type="radio" name="horario" value="tarde">
+              Tarde (12:00 - 18:00)
+            </label>
+            <label>
+              <input type="radio" name="horario" value="noche">
+              Noche (18:00 - 22:00)
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="objetivos">Objetivos de entrenamiento:</label>
+          <textarea id="objetivos" name="objetivos" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn-registro">Registrarse</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
